@@ -43,7 +43,7 @@ setProductInfo({
               ...productInfo,
               imageURL
           }
-          axios.post('http://localhost:5000/addProduct',newProduct).then(res=>{
+          axios.post('https://ancient-dusk-66022.herokuapp.com/addProduct',newProduct).then(res=>{
               console.log(res);
               afterProductAdd(res)
           }).catch(err=>{
@@ -78,7 +78,7 @@ setProductInfo({
                 <div className="mb-3">
                   <label
                     htmlFor="exampleFormControlInput1"
-                    className="form-label w-100 text-left"
+                    className="form-label w-100 text-start"
                   >
                     Product Name
                   </label>
@@ -98,7 +98,7 @@ setProductInfo({
                 <div className="mb-3">
                   <label
                     htmlFor="exampleFormControlInput1"
-                    className="form-label w-100 text-left"
+                    className="form-label w-100 text-start"
                   >
                   Wight
                   </label>
@@ -117,7 +117,7 @@ setProductInfo({
                 <div className="mb-3">
                   <label
                     htmlFor="exampleFormControlInput1"
-                    className="form-label w-100 text-left"
+                    className="form-label w-100 text-start"
                   >
                 Add Price
                   </label>
